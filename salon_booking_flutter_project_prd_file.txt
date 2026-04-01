@@ -1,0 +1,412 @@
+Perfect 🔥
+Ab hum next level par ja rahe hain — ye app tumhare channel ke liye **bahut powerful growth project** ho sakta hai.
+
+Kyuki:
+
+👉 Real business use case hai
+👉 Multiple screens hain (learning value high)
+👉 Supabase use hoga (backend + real app feel)
+👉 Monetization potential high hai
+
+Main tumhare liye **complete updated PRD bana raha hoon** — same structure me jo tum follow kar rahe ho.
+
+---
+
+# 📄 Flutter App PRD
+
+# Salon Appointment Booking App
+
+---
+
+# 1️⃣ Product Overview
+
+**Salon Appointment Booking App** ek mobile app hai jo salon owners ko apne customers ke appointments ko **manage, schedule aur track** karne me help karega.
+
+Customers bhi is app ke through **easily appointment book kar sakte hain**, bina call ya WhatsApp ke.
+
+---
+
+# 2️⃣ Target Users
+
+### Primary Users
+
+* Salon owners
+* Barbershops
+* Beauty parlors
+* Freelance hairstylists
+
+### Secondary Users
+
+* Customers (jo appointment book karenge)
+* Flutter learners (real-world app banana seekhne ke liye)
+
+---
+
+# 3️⃣ Real World Problems (Unke Problems)
+
+Salon industry me abhi bhi kaafi kaam **manual system par chal raha hai**.
+
+---
+
+### Problem 1
+
+Appointments WhatsApp ya call par manage hote hain.
+
+❌ Messages lost ho jate hain
+❌ Double booking ho jati hai
+❌ Confusion hota hai
+
+---
+
+### Problem 2
+
+Salon owner ko **daily schedule clear nahi hota**.
+
+Example:
+
+* Kaun customer kis time aa raha hai?
+* Kitne slots free hain?
+
+Sab manually yaad rakhna padta hai.
+
+---
+
+### Problem 3
+
+No proper record keeping
+
+❌ Previous customers ka data nahi hota
+❌ Repeat customers track nahi hote
+❌ Business growth measure nahi hota
+
+---
+
+### Problem 4
+
+Customers ko wait karna padta hai
+
+* No time slot system
+* No booking system
+* No confirmation
+
+---
+
+# 4️⃣ App Solution
+
+Ye app salon owners aur customers dono ke liye **simple booking system provide karegi.**
+
+---
+
+### Salon Owner ke liye:
+
+✔ Daily appointment schedule dekhega
+✔ Time slots manage karega
+✔ Customer data save karega
+✔ Double booking avoid karega
+
+---
+
+### Customers ke liye:
+
+✔ Available slots dekhenge
+✔ Appointment book karenge
+✔ Confirmation milega
+✔ Waiting time reduce hoga
+
+---
+
+### Learning Angle (Tumhare Subscribers ke liye)
+
+Is app ko banate waqt users seekhenge:
+
+* Form handling
+* Time slot logic
+* Database structure
+* Real-time booking system
+* Backend integration using Supabase
+
+---
+
+# 5️⃣ Why Supabase is Added
+
+Is app me Supabase use karna **must hai** kyuki:
+
+### Without backend:
+
+* booking sync nahi hogi
+* data save nahi hoga
+* multi-user system possible nahi
+
+---
+
+### Supabase se benefits:
+
+✔ Cloud database (appointments store honge)
+✔ Authentication (user login/signup)
+✔ Real-time updates (slots instantly update honge)
+✔ Secure data storage
+
+---
+
+# 6️⃣ Tech Stack
+
+Frontend:
+
+Flutter
+
+Backend:
+
+Supabase
+
+Database:
+
+Supabase PostgreSQL
+
+Authentication:
+
+Supabase Auth
+
+State Management:
+
+Riverpod / Provider
+
+---
+
+# 7️⃣ Core Features
+
+---
+
+## 1️⃣ User Authentication
+
+* Signup (customer / salon owner)
+* Login
+* Role selection
+
+---
+
+## 2️⃣ Salon Profile (Owner Side)
+
+Salon owner add karega:
+
+* Salon name
+* Services (Haircut, Facial etc.)
+* Price
+* Working hours
+
+---
+
+## 3️⃣ Appointment Booking
+
+Customer:
+
+* Date select karega
+* Time slot select karega
+* Service select karega
+* Book appointment
+
+---
+
+## 4️⃣ Time Slot Management
+
+Owner:
+
+* Available slots set karega
+* Booked slots auto-block honge
+
+---
+
+## 5️⃣ Appointment List (Owner Dashboard)
+
+Owner dekh sakta hai:
+
+* Today’s appointments
+* Upcoming bookings
+* Customer details
+
+---
+
+## 6️⃣ Booking Confirmation
+
+Customer ko milega:
+
+* Booking success message
+* Appointment details
+
+---
+
+## 7️⃣ Cancel Appointment
+
+Customer appointment cancel kar sakta hai.
+
+---
+
+## 8️⃣ Real-Time Updates
+
+Agar ek slot book ho gaya:
+
+👉 Wo dusre users ke liye unavailable ho jayega instantly
+
+---
+
+# 8️⃣ App Screens
+
+Total Screens: **7 (Intermediate Level Project)**
+
+---
+
+## Screen 1
+
+Splash Screen
+
+---
+
+## Screen 2
+
+Login / Signup Screen
+
+---
+
+## Screen 3
+
+Role Selection Screen
+
+User choose karega:
+
+* Customer
+* Salon Owner
+
+---
+
+## Screen 4
+
+Home Screen (Customer)
+
+* Services list
+* Book appointment button
+
+---
+
+## Screen 5
+
+Booking Screen
+
+* Date picker
+* Time slot selection
+* Service selection
+
+---
+
+## Screen 6
+
+Owner Dashboard
+
+* Today appointments
+* Upcoming bookings
+
+---
+
+## Screen 7
+
+Appointments List Screen
+
+* All bookings list
+
+---
+
+# 9️⃣ Supabase Database Structure
+
+---
+
+## Table: users
+
+```id="o1jszq"
+id
+name
+email
+role (customer / owner)
+created_at
+```
+
+---
+
+## Table: salons
+
+```id="8r7wwh"
+id
+owner_id
+salon_name
+working_hours
+created_at
+```
+
+---
+
+## Table: services
+
+```id="8r7g2d"
+id
+salon_id
+service_name
+price
+duration
+```
+
+---
+
+## Table: appointments
+
+```id="wt2j26"
+id
+user_id
+salon_id
+service_id
+date
+time_slot
+status
+created_at
+```
+
+---
+
+# 🔟 Flutter Folder Structure
+
+```id="y2z8gb"
+lib
+
+core
+theme
+constants
+
+features
+
+auth
+login_screen.dart
+signup_screen.dart
+
+role
+role_selection_screen.dart
+
+customer
+home_screen.dart
+booking_screen.dart
+
+owner
+dashboard_screen.dart
+appointments_screen.dart
+
+models
+user_model.dart
+appointment_model.dart
+
+services
+supabase_service.dart
+appointment_service.dart
+
+widgets
+slot_card.dart
+appointment_tile.dart
+
+main.dart
+```
+
+
